@@ -3,7 +3,7 @@
 Java Socket programming is used for communication between the applications running on different JRE. It can be connection-oriented or connection-less.
 Socket and ServerSocket classes are used for connection-oriented socket programming.
 The client in socket programming must know two pieces of information:
-    1. IP Address of Server
+    1. IP Address of server
     2. Port number.
 
 This repo contains the code for creating 4 differents servers/client applications using socket programming:
