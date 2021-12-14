@@ -10,6 +10,7 @@ import java.net.Socket;
 
 public class Server {
 	
+	//function that creates bytes server
 	static void byteServer() throws IOException {
 		ServerSocket ss = new ServerSocket(1234);
 		System.out.println("server is started !");
@@ -28,7 +29,7 @@ public class Server {
 		System.out.println("sent response to client.");
 	}
 	
-	
+	//function that creates 'string' server
 	static void charServer() throws IOException {
 		ServerSocket ss = new ServerSocket(2345);
 		System.out.println("server is started !");
@@ -48,7 +49,7 @@ public class Server {
 		pw.println(s.toUpperCase());
 	}
 	
-	
+	  //function that object server
 	static void objServer() throws IOException, ClassNotFoundException {
 		ServerSocket ss = new ServerSocket(3456);
 		System.out.println("server is started !");
@@ -72,6 +73,7 @@ public class Server {
 	
 	//main function calls one of the servers to be started
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		  // put here the function of the server we want to create
 		charServer();
 	}
 	
